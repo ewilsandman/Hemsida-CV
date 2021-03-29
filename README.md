@@ -1,3 +1,9 @@
+# Notes
+
+Projectet behöver att https://nodejs.org/en/ är installerat på datorn
+Ska använda Styled-components https://styled-components.com/
+hur man använder React i VC https://code.visualstudio.com/docs/nodejs/reactjs-tutorial
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
