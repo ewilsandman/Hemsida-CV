@@ -1,9 +1,9 @@
 # Notes
 
-Projectet behöver att https://nodejs.org/en/ är installerat på datorn .
+Projectet behöver att https://nodejs.org/en/ är installerat på datorn .\
 Ska använda Styled-components https://styled-components.com/ .\
 hur man använder React i VC https://code.visualstudio.com/docs/nodejs/reactjs-tutorial .\
-hur man skapar en databas i MySQL https://help.dreamhost.com/hc/en-us/articles/221691727-Creating-a-MySQL-database .\
+hur man skapar en databas i MySQL https://help.dreamhost.com/hc/en-us/articles/221691727-Creating-a-MySQL-database .
 
 # Getting Started with Create React App
 
