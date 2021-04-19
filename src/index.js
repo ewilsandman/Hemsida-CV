@@ -22,6 +22,9 @@ const Title = styled.h1`
 `;
 
 function Hmm(){
+  array.forEach(element => {
+    
+  });
   return <Title>OwO</Title>;      
 }
 
