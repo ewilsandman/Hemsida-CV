@@ -5,10 +5,17 @@ import './index.css';
 //import reportWebVitals from './reportWebVitals';
 
 const Background = styled.body`
-  background-color: green;
-`
+  background: black;
+  padding 0px;
+  margin: 0px;
+  width: auto;
+  height: 2000px;
+  color: white
+`;
 
 const Title = styled.h1`
+  padding 0px;
+  margin: 0px;
   font-size: 1.5em;
   text-align: center;
   color: palevioletred;
@@ -19,16 +26,16 @@ function Hmm(){
 }
 
 function Ono(){
-  return <Background>Whats this?</Background>;
+  return <Title>Whats this?</Title>;
 }
  
 //const test2 = React.createElement(Background, null, 'This be a test');
 
 ReactDOM.render(
-  <div>
-    <Hmm />
-    <Ono />
-  </div>,
+<Background>
+    <Hmm/>
+    <Ono/>
+</Background>,
 document.getElementById('root'),
 );
 
