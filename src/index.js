@@ -14,30 +14,72 @@ const Background = styled.body`
 `;
 
 const Title = styled.h1`
-  padding 0px;
+  padding 75px;
   margin: 0px;
-  font-size: 1.5em;
+  font-size: 2em;
   text-align: center;
-  color: palevioletred;
+  color: white;
+  background: grey;
+  text-shadow: 0 0 6px green, 0 0 10px lightgreen;
 `;
 
-function Hmm(){
-  array.forEach(element => {
-    
-  });
-  return <Title>OwO</Title>;      
+const SubTitle = styled.h2`
+font-size: 1.5em;
+background: darkgrey;
+`
+
+const Main = styled.text`
+text-align: center;
+font-size: 1em;
+padding 0px;
+margin: 0px;
+color: white;
+text-shadow: 0 0 6px green, 0 0 10px lightgreen;
+`;
+function Start(){
+   return <Title>Curriculum vitae Emil Sundman</Title>
 }
 
-function Ono(){
-  return <Title>Whats this?</Title>;
+function GetText()
+{
+ const testText = ["IT", "DO", "WORKE!!"]
+ return testText;
 }
- 
-//const test2 = React.createElement(Background, null, 'This be a test');
+
+function GetTitle()
+{
+const testTitle = ["Look", "At", "This"]
+return testTitle;
+}
+
+function Core(){
+  var Titles = GetTitle();
+  var Texts = GetText();
+  const CoreDone = []
+  for (let index = 0; index < Titles.length; index++) 
+  {
+    const localTitle = Titles[index];
+    const localText = Texts[index]; 
+    CoreDone.push(
+    <div>
+    <SubTitle>{localTitle}</SubTitle>
+    <Main>{localText}</Main>
+    </div>)
+  }
+  return (CoreDone);
+}
+
+function Footer(){
+return null
+}
 
 ReactDOM.render(
 <Background>
-    <Hmm/>
-    <Ono/>
+    <Start/>
+      <Main>
+        <Core/>
+      </Main>
+    <Footer/>
 </Background>,
 document.getElementById('root'),
 );
