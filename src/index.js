@@ -70,7 +70,12 @@ function Core(){
 }
 
 function Footer(){
-return null
+return(
+<div>
+<SubTitle>Contact me!</SubTitle>
+<Main>infoinfoinfoinfoinfoinfoinfoinfoinfoinfo</Main>
+</div>
+)
 }
 
 ReactDOM.render(
