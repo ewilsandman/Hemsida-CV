@@ -1,48 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import styled from 'styled-components';
+import {Background, Title, SubTitle, Main} from"./StyleApp";
+import ImageApp from './ImageApp.js';
 import './index.css';
+import { ProjectApp } from './ProjectApp';
 //import reportWebVitals from './reportWebVitals';
 
-const Background = styled.body`
-  background: black;
-  padding 0px;
-  margin: 0px;
-  width: auto;
-  height: 2000px;
-  color: white
-`;
 
-const Title = styled.h1`
-  padding 75px;
-  margin: 0px;
-  font-size: 2em;
-  text-align: center;
-  color: white;
-  background: grey;
-  text-shadow: 0 0 6px green, 0 0 10px lightgreen;
-`;
-
-const SubTitle = styled.h2`
-font-size: 1.5em;
-background: darkgrey;
-`
-
-const Main = styled.text`
-text-align: center;
-font-size: 1em;
-padding 0px;
-margin: 0px;
-color: white;
-text-shadow: 0 0 6px green, 0 0 10px lightgreen;
-`;
 function Start(){
    return <Title>Curriculum vitae Emil Sundman</Title>
 }
 
 function GetText()
 {
- const testText = ["IT", "DO", "WORKE!!"]
+ const testText = ["IT", "Do", "WORKE!!"]
  return testText;
 }
 
@@ -52,22 +23,9 @@ const testTitle = ["Look", "At", "This"]
 return testTitle;
 }
 
-function Core(){
-  var Titles = GetTitle();
-  var Texts = GetText();
-  const CoreDone = []
-  for (let index = 0; index < Titles.length; index++) 
-  {
-    const localTitle = Titles[index];
-    const localText = Texts[index]; 
-    CoreDone.push(
-    <div>
-    <SubTitle>{localTitle}</SubTitle>
-    <Main>{localText}</Main>
-    </div>)
-  }
-  return (CoreDone);
-}
+/*function Core(){
+  ProjectApp();
+}*/
 
 function Footer(){
 return(
@@ -82,7 +40,7 @@ ReactDOM.render(
 <Background>
     <Start/>
       <Main>
-        <Core/>
+        <ProjectApp/>
       </Main>
     <Footer/>
 </Background>,
