@@ -1,9 +1,9 @@
 export const EduData = [
     {
         Type: "Education",
-        Name: "School",
-        When: "Now",
-        Desc: "The game is nice",
+        Name: "Klara södra teoretiska",
+        When: "2018-2021",
+        Desc: "My upper secondary education",
     },
 
     {

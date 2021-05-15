@@ -1,6 +1,6 @@
 import React from 'react';
 import { MenyData } from './MenyData';
-import StyleApp, { SubTitle, Title, MenuStyle } from "./StyleApp";
+import StyleApp, { SubTitle, Title, MenuStyle, Links } from "./StyleApp";
 
 export const MenyApp = () => {
     return (
@@ -32,7 +32,7 @@ const Meny = ({ Name }) => {
         var res = anchorStr.concat(nameStr);
         return (
             <div>
-                <li><a href={res} >{Name}</a></li>
+                <li><Links href={res} >{Name}</Links></li>
             </div>
 
         );

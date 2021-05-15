@@ -8,6 +8,7 @@ export const PersApp = () => {
     return (
         <>
             <div>
+                <Title id = "Personal"> Personal </Title>
                 {PersData.map((data, key) => {
                     return (
                         <div key={key}>

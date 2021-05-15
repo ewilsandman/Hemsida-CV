@@ -8,6 +8,8 @@ import { MenyApp } from './MenyApp';
 import { EduApp } from './EduApp';
 import {WorkApp} from './WorkApp';
 import {PersApp} from './PersApp';
+import {ParticleApp, ParticleAppObject } from './ParticleApp'
+import Particles from 'react-tsparticles';
 //import reportWebVitals from './reportWebVitals';
 
 function Start(){
@@ -39,8 +41,10 @@ return(
 )
 }
 
+
 ReactDOM.render(
 <Background>
+  <ParticleAppObject/>
     <Start/>
       <Main>
         <MenyApp/>

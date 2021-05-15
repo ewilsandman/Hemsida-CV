@@ -33,7 +33,7 @@ const Educate = ({ Type, Name, When, Desc }) => {
     if (Type == "Education") {
         return (
             <div>
-                <Title>{Name}</Title>
+                <SubTitle>{Name}</SubTitle>
                 <Main>{When}</Main>
                 <Main>{Desc}</Main>
             </div>
@@ -42,7 +42,7 @@ const Educate = ({ Type, Name, When, Desc }) => {
     if (Type == "Course") {
         return (
             <div>
-                <MenuStyle>{Name}</MenuStyle>
+                <SubTitle>{Name}</SubTitle>
                 <Main>{When}</Main>
                 <Main>{Desc}</Main>
             </div>
@@ -51,7 +51,7 @@ const Educate = ({ Type, Name, When, Desc }) => {
     if (Type == "Cert") {
         return (
             <div>
-                <MenuStyle>{Name}</MenuStyle>
+                <SubTitle>{Name}</SubTitle>
                 <Main>{When}</Main>
                 <Main>{Desc}</Main>
             </div>

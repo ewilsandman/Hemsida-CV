@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Background = styled.body`
-  background: black;
   padding 0px;
   margin: 0px;
   width: auto;
@@ -16,17 +15,20 @@ const Title = styled.h1`
   font-size: 2em;
   text-align: center;
   color: white;
-  background: grey;
   /* text-shadow: 0 0 6px green, 0 0 10px lightgreen; */
 `;
 
 const SubTitle = styled.h2`
 font-size: 1.5em;
-background: darkgrey;
 text-align: center;
 color: white;
-background: grey;
 /* text-shadow: 0 0 6px green, 0 0 10px lightgreen; */
+`
+
+const Links = styled.a`
+color: blue;
+text-decoration: none; /* no underline */
+
 `
 
 const MenuStyle = styled.ul`
@@ -39,10 +41,9 @@ margin: 0;
 const Main = styled.p`
 text-align: center;
 font-size: 1em;
-background: black;
 padding 0px;
 margin: 0px;
 color: white;
 /* text-shadow: 0 0 6px green, 0 0 10px lightgreen; */
 `;
-export { Background, Title, SubTitle, Main, MenuStyle };
+export { Background, Title, SubTitle, Main, MenuStyle, Links };

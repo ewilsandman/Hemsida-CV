@@ -1,16 +1,16 @@
 export const ProjectData = [
   {
-    Name: "SpacePirates",
-    When: "Now",
-    Desc: "The game is nice",
+    Name: "SpaceRaid",
+    When: "2021",
+    Desc: "A 3D action adventure game in space",
     Img: "./CatInAPot.jpg",
     GitLink: "https://github.com/ewilsandman/SpacePirates"
   },
   {
-    Name: "CoolGame2",
-    When: "020619",
-    Desc: "game that is cool",
+    Name: "Swordgame",
+    When: "2019-2020",
+    Desc: "The first game i have worked on, a 2D hack-and-slash.",
     Img: " CatInAPot",
-    GitLink: "https://github.com/ewilsandman/SpacePirates"
+    GitLink: "https://github.com/ewilsandman/Swordgame"
   }
 ]

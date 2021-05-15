@@ -1,5 +1,5 @@
 import React from 'react';
-import StyleApp, { Main, SubTitle, Title } from "./StyleApp";
+import StyleApp, { Main, SubTitle, Title, Links } from "./StyleApp";
 import { ProjectData } from "./ProjectData";
 import ImageApp from './ImageApp';
 
@@ -37,7 +37,7 @@ const Project = ({ Name, When, Desc, Img, GitLink }) => {
       <Main>{Desc}</Main>
       <img alt="image go here" src={Img} />
       <Main></Main>
-      <a href={GitLink}> Link to Git </a>
+      <Links href={GitLink}> Link to Git </Links>
     </div>
   );
 };
