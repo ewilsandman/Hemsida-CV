@@ -2,7 +2,7 @@ import React from 'react';
 //import ReactDOM from 'react-dom';
 
 var listOfImages =[];
-
+/*
 class ImageApp extends React.Component{
     importAll(r) {
         return r.keys().map(r);
@@ -22,4 +22,4 @@ class ImageApp extends React.Component{
         )
     }
 }
-export default ImageApp;
+export default ImageApp;*/

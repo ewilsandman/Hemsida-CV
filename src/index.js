@@ -4,11 +4,14 @@ import {Background, Title, SubTitle, Main} from"./StyleApp";
 import ImageApp from './ImageApp.js';
 import './index.css';
 import { ProjectApp } from './ProjectApp';
+import { MenyApp } from './MenyApp';
+import { EduApp } from './EduApp';
+import {WorkApp} from './WorkApp';
+import {PersApp} from './PersApp';
 //import reportWebVitals from './reportWebVitals';
 
-
 function Start(){
-   return <Title>Curriculum vitae Emil Sundman</Title>
+   return <Title id="Main" >Curriculum vitae Emil Sundman</Title>
 }
 
 function GetText()
@@ -30,7 +33,7 @@ return testTitle;
 function Footer(){
 return(
 <div>
-<SubTitle>Contact me!</SubTitle>
+<Title id= "Contact">Contact me!</Title>
 <Main>infoinfoinfoinfoinfoinfoinfoinfoinfoinfo</Main>
 </div>
 )
@@ -40,7 +43,11 @@ ReactDOM.render(
 <Background>
     <Start/>
       <Main>
+        <MenyApp/>
         <ProjectApp/>
+        <EduApp/>
+        <WorkApp/>
+        <PersApp/>
       </Main>
     <Footer/>
 </Background>,

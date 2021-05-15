@@ -17,7 +17,7 @@ const Title = styled.h1`
   text-align: center;
   color: white;
   background: grey;
-  text-shadow: 0 0 6px green, 0 0 10px lightgreen;
+  /* text-shadow: 0 0 6px green, 0 0 10px lightgreen; */
 `;
 
 const SubTitle = styled.h2`
@@ -26,15 +26,23 @@ background: darkgrey;
 text-align: center;
 color: white;
 background: grey;
-text-shadow: 0 0 6px green, 0 0 10px lightgreen;
+/* text-shadow: 0 0 6px green, 0 0 10px lightgreen; */
 `
 
-const Main = styled.text`
+const MenuStyle = styled.ul`
+color: green;
+list-style-type: none;   
+padding: 0;   
+margin: 0; 
+`
+
+const Main = styled.p`
 text-align: center;
 font-size: 1em;
+background: black;
 padding 0px;
 margin: 0px;
 color: white;
-text-shadow: 0 0 6px green, 0 0 10px lightgreen;
+/* text-shadow: 0 0 6px green, 0 0 10px lightgreen; */
 `;
-export{Background, Title, SubTitle, Main};
+export { Background, Title, SubTitle, Main, MenuStyle };
