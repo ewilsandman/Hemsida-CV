@@ -16,6 +16,7 @@ const Title = styled.h1`
   text-align: center;
   color: white;
   /* text-shadow: 0 0 6px green, 0 0 10px lightgreen; */
+  text-decoration: underline;
 `;
 
 const SubTitle = styled.h2`
@@ -26,7 +27,7 @@ color: white;
 `
 
 const Links = styled.a`
-color: blue;
+color: lightgreen;
 text-decoration: none; /* no underline */
 
 `

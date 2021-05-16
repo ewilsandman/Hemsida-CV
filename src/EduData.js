@@ -3,20 +3,20 @@ export const EduData = [
         Type: "Education",
         Name: "Klara södra teoretiska",
         When: "2018-2021",
-        Desc: "My upper secondary education",
+        Desc: "My upper secondary education, IT and media technologies with a focus on game design.",
     },
 
     {
         Type: "Cert",
-        Name: "Certification",
-        When: "020619",
-        Desc: "Good person yes",
+        Name: "Certification First aid",
+        When: "2017",
+        Desc: "Certificate from the swedish red cross on first aid.",
     },
 
     {
         Type: "Course",
-        Name: "This be a course",
-        When: "soon",
-        Desc: "How to play game",
+        Name: "placeholder course",
+        When: "time",
+        Desc: "desc",
     }
 ]

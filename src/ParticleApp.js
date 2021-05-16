@@ -37,7 +37,7 @@ class ParticleAppObject extends Component {
           }, 
           fpsLimit: 60,
           interactivity: {
-            detectsOn: "canvas",
+            detectsOn: "window",
             events: {
               onClick: {
                 enable: true,
@@ -67,14 +67,15 @@ class ParticleAppObject extends Component {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: "#008000",
             },
             links: {
-              color: "#ffffff",
+              color: "#008000",
               distance: 150,
               enable: true,
               opacity: 0.5,
               width: 1,
+              triangles: true
             },
             collisions: {
               enable: true,
@@ -92,7 +93,7 @@ class ParticleAppObject extends Component {
                 enable: true,
                 value_area: 800,
               },
-              value: 80,
+              value: 100,
             },
             opacity: {
               value: 0.5,
