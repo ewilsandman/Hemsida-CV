@@ -3,6 +3,9 @@ export const MenyData = [
         Name: "Main",
     },
     {
+        Name: "Bio",
+    },
+    {
         Name: "Educations",
     },
     {
@@ -10,9 +13,6 @@ export const MenyData = [
     },
     {
         Name: "Work",
-    },
-    {
-        Name: "Personal",
     },
     {
         Name: "Contact",

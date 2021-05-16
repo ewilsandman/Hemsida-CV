@@ -1,7 +1,7 @@
-import React from 'react';
+//import React from 'react';
 //import ReactDOM from 'react-dom';
 
-var listOfImages =[];
+//var listOfImages =[];
 /*
 class ImageApp extends React.Component{
     importAll(r) {

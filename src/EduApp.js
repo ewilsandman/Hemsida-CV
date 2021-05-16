@@ -1,7 +1,6 @@
 import React from 'react';
-import StyleApp, { Main, MenuStyle, SubTitle, Title } from "./StyleApp";
+import { Main, SubTitle, Title, ProjectBox } from "./StyleApp";
 import { EduData } from "./EduData";
-import ImageApp from './ImageApp';
 
 export const EduApp = () => {
     return (
@@ -30,7 +29,16 @@ export const EduApp = () => {
 const Educate = ({ Type, Name, When, Desc }) => {
     if (!Name) return <div />;
 
-    if (Type == "Education") {
+    if (Type === "Education") {
+        return (
+            <ProjectBox>
+                <SubTitle>{Name}</SubTitle>
+                <Main>{When}</Main>
+                <Main>{Desc}</Main>
+            </ProjectBox>
+        )
+    }
+    if (Type === "Course") {
         return (
             <div>
                 <SubTitle>{Name}</SubTitle>
@@ -39,22 +47,13 @@ const Educate = ({ Type, Name, When, Desc }) => {
             </div>
         )
     }
-    if (Type == "Course") {
+    if (Type === "Cert") {
         return (
-            <div>
+            <ProjectBox>
                 <SubTitle>{Name}</SubTitle>
                 <Main>{When}</Main>
                 <Main>{Desc}</Main>
-            </div>
-        )
-    }
-    if (Type == "Cert") {
-        return (
-            <div>
-                <SubTitle>{Name}</SubTitle>
-                <Main>{When}</Main>
-                <Main>{Desc}</Main>
-            </div>
+            </ProjectBox>
         )
     }
 

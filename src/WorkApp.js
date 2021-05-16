@@ -1,7 +1,6 @@
 import React from 'react';
-import StyleApp, { Main, SubTitle, Title } from "./StyleApp";
+import { Main, SubTitle, Title, ProjectBox } from "./StyleApp";
 import { WorkData } from "./WorkData";
-import ImageApp from './ImageApp';
 
 export const WorkApp = () => {
     return (
@@ -29,10 +28,10 @@ export const WorkApp = () => {
 const Work = ({ Name, When, Desc, Img, GitLink }) => {
     if (!Name) return <div />;
     return (
-        <div>
+        <ProjectBox>
             <SubTitle>{Name}</SubTitle>
             <Main>{When}</Main>
             <Main>{Desc}</Main>
-        </div>
+        </ProjectBox>
     );
 };

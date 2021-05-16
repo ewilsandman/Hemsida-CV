@@ -1,6 +1,6 @@
 import React from 'react';
 import { MenyData } from './MenyData';
-import StyleApp, { SubTitle, Title, MenuStyle, Links } from "./StyleApp";
+import { MenuStyle, Links } from "./StyleApp";
 
 export const MenyApp = () => {
     return (

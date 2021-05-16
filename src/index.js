@@ -1,46 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Background, Title, SubTitle, Main} from"./StyleApp";
-import ImageApp from './ImageApp.js';
+import {Background, Title, Main, ProjectBox} from"./StyleApp";
+//import ImageApp from './ImageApp.js';
 import './index.css';
 import { ProjectApp } from './ProjectApp';
 import { MenyApp } from './MenyApp';
 import { EduApp } from './EduApp';
 import {WorkApp} from './WorkApp';
 import {PersApp} from './PersApp';
-import {ParticleApp, ParticleAppObject } from './ParticleApp'
-import Particles from 'react-tsparticles';
+import {ParticleAppObject } from './ParticleApp'
 //import reportWebVitals from './reportWebVitals';
 
 function Start(){
    return <Title id="Main" >Curriculum vitae Emil Sundman</Title>
 }
 
-function GetText()
-{
- const testText = ["IT", "Do", "WORKE!!"]
- return testText;
-}
-
-function GetTitle()
-{
-const testTitle = ["Look", "At", "This"]
-return testTitle;
-}
-
-/*function Core(){
-  ProjectApp();
-}*/
-
 function Footer(){
 return(
 <div>
 <Title id= "Contact">Contact me!</Title>
-<Main>infoinfoinfoinfoinfoinfoinfoinfoinfoinfo</Main>
+<ProjectBox>
+  <Main>infoinfoinfoinfoinfoinfoinfoinfoinfoinfo</Main>
+  </ProjectBox>
 </div>
 )
 }
-
 
 ReactDOM.render(
 <Background>
@@ -48,10 +32,10 @@ ReactDOM.render(
     <Start/>
       <Main>
         <MenyApp/>
+        <PersApp/>
         <ProjectApp/>
         <EduApp/>
         <WorkApp/>
-        <PersApp/>
       </Main>
     <Footer/>
 </Background>,

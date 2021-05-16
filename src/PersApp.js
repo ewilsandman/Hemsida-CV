@@ -1,21 +1,17 @@
 import React from 'react';
-import StyleApp, { Main, SubTitle, Title } from "./StyleApp";
-import { ProjectData } from "./ProjectData";
-import ImageApp from './ImageApp';
+import { Main, SubTitle, Title, ProjectBox } from "./StyleApp";
 import { PersData } from './PersData';
 
 export const PersApp = () => {
     return (
         <>
             <div>
-                <Title id = "Personal"> Personal </Title>
+                <Title id = "Bio"> Bio </Title>
                 {PersData.map((data, key) => {
                     return (
                         <div key={key}>
                             <Personal
                                 key={key}
-                                Name={data.Name}
-                                When={data.When}
                                 Desc={data.Desc}
                             />
                         </div>
@@ -27,13 +23,11 @@ export const PersApp = () => {
 };
 
 
-const Personal = ({ Name, When, Desc, Img, GitLink }) => {
-    if (!Name) return <div />;
+const Personal = ({Desc}) => {
+    if (!Desc) return <div />;
     return (
-        <div>
-            <SubTitle>{Name}</SubTitle>
-            <Main>{When}</Main>
+        <ProjectBox>
             <Main>{Desc}</Main>
-        </div>
+        </ProjectBox>
     );
 };

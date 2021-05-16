@@ -1,13 +1,13 @@
 import React from 'react';
-import StyleApp, { Main, SubTitle, Title, Links } from "./StyleApp";
+import { Main, SubTitle, Title, Links, ProjectBox } from "./StyleApp";
 import { ProjectData } from "./ProjectData";
-import ImageApp from './ImageApp';
+//import ImageApp from './ImageApp';
 
 export const ProjectApp = () => {
   return (
     <>
       <div>
-        <Title id="Projects"> Projects </Title>
+        <Title id="Projects"> Projects</Title>
         {ProjectData.map((data, key) => {
           return (
             <div key={key}>
@@ -31,13 +31,13 @@ export const ProjectApp = () => {
 const Project = ({ Name, When, Desc, Img, GitLink }) => {
   if (!Name) return <div />;
   return (
-    <div>
-      <SubTitle>{Name}</SubTitle>
-      <Main>{When}</Main>
-      <Main>{Desc}</Main>
-      <img alt="image go here" src={Img} />
-      <Main></Main>
-      <Links href={GitLink}> Link to Git </Links>
-    </div>
+      <ProjectBox>  
+        <SubTitle>{Name}</SubTitle>
+        <Main>{When}</Main>
+        <Main>{Desc}</Main>
+        <img alt="" src={Img} />
+        <Main></Main>
+        <Links href={GitLink}> Link to GitHub </Links>
+      </ProjectBox>
   );
 };
