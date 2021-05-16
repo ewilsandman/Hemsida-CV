@@ -19,8 +19,8 @@ function Footer(){
 return(
 <div>
 <Title id= "Contact">Contact me!</Title>
-<ProjectBox>
-  <Main>infoinfoinfoinfoinfoinfoinfoinfoinfoinfo</Main>
+  <ProjectBox>
+    <Main>Find me on Discord: ewilsandman#0499 </Main>
   </ProjectBox>
 </div>
 )

@@ -9,7 +9,8 @@ const Background = styled.div`
 `;
 
 const Title = styled.h1`
-  padding 75px;
+  padding: 20px;
+  padding-top: 40px;
   margin: 0px;
   font-size: 2em;
   text-align: center;
@@ -59,4 +60,4 @@ color: white;
 text-decoration: none;
 /* text-shadow: 0 0 6px green, 0 0 10px lightgreen; */
 `;
-export { Background, Title, SubTitle, Main, MenuStyle, Links, ProjectBox };
+export { Background, Title, SubTitle, Main, MenuStyle, Links, ProjectBox,};

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Main, SubTitle, Title, ProjectBox } from "./StyleApp";
+import { Main, Title, ProjectBox } from "./StyleApp";
 import { PersData } from './PersData';
 
 export const PersApp = () => {

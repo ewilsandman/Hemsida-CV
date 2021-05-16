@@ -1,8 +1,5 @@
 export const MenyData = [
     {
-        Name: "Main",
-    },
-    {
         Name: "Bio",
     },
     {
