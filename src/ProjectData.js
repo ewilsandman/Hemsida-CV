@@ -1,17 +1,31 @@
 export const ProjectData = [
   {
+    Name: "(Gp3) Anomaly 52",
+    When: "2022",
+    Desc: "A puzzle platformer portal like made in Unreal with C++ and Blueprint, Link to be added",
+    Img: "",
+    GitLink: ""
+  },
+  {
+    Name: "(GP2) Cheese the day",
+    When: "2021 - 2022",
+    Desc: "A runner / platformer made in Unity with C#",
+    Img: "",
+    GitLink: "https://futuregames.itch.io/cheese-the-day"
+  },
+  {
+    Name: "(GP1) Novice alchemist",
+    When: "2021",
+    Desc: "A experimental game made in Unity with C#",
+    Img: "",
+    GitLink: "https://futuregames.itch.io/novice-alchemist"
+  },
+  {
     Name: "SpaceRaid",
     When: "2021",
     Desc: "A 3D action adventure game in space. Developed in C# using Unity 3D as part of a school project",
     Img: "",
     GitLink: "https://github.com/ewilsandman/SpacePirates"
-  },
-  {
-    Name: "Swordgame",
-    When: "2019-2020",
-    Desc: "The first game i have worked on, a 2D hack-and-slash. Developed in C# using Unity 2D as part of a school project. Link is currently non functional",
-    Img: "",
-    GitLink: "https://github.com/ewilsandman/Swordgame"
   },
   {
     Name: "GYAR-Report",
@@ -33,5 +47,12 @@ export const ProjectData = [
     Desc: "A school project where i recreated the LinkedList .Net system on my own in C# via Visual Studio",
     Img: "",
     GitLink: "https://github.com/ewilsandman/LinkedList"
+  },
+   {
+    Name: "Swordgame",
+    When: "2019-2020",
+    Desc: "The first game i have worked on, a 2D hack-and-slash. Developed in C# using Unity 2D as part of a school project. Link is non functional",
+    Img: "",
+    GitLink: "https://github.com/ewilsandman/Swordgame"
   },
 ]

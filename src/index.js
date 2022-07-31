@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Background, Title, Main, ProjectBox} from"./StyleApp";
+import {Background, Title, Main, Links, ProjectBox} from"./StyleApp";
 //import ImageApp from './ImageApp.js';
 import './index.css';
 import { ProjectApp } from './ProjectApp';
@@ -21,6 +21,7 @@ return(
 <Title id= "Contact">Contact me!</Title>
   <ProjectBox>
     <Main>Find me on Discord: ewilsandman#0499 </Main>
+	<Links href="https://www.linkedin.com/in/emil-sundman-662b5a219/"> Or on LinkedIn </Links>
   </ProjectBox>
 </div>
 )

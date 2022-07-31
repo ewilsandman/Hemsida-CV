@@ -30,14 +30,22 @@ export const ProjectApp = () => {
 
 const Project = ({ Name, When, Desc, Img, GitLink }) => {
   if (!Name) return <div />;
-  return (
+  if (!GitLink) return(
+        <ProjectBox>  
+        <SubTitle>{Name}</SubTitle>
+        <Main>{When}</Main>
+        <Main>{Desc}</Main>
+        <img alt="" src={Img} />
+        <Main></Main>
+      </ProjectBox> );
+  else return (
       <ProjectBox>  
         <SubTitle>{Name}</SubTitle>
         <Main>{When}</Main>
         <Main>{Desc}</Main>
         <img alt="" src={Img} />
         <Main></Main>
-        <Links href={GitLink}> Link to GitHub </Links>
+        <Links href={GitLink}> Link to project </Links>
       </ProjectBox>
   );
 };
